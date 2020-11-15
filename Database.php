@@ -8,6 +8,12 @@
         
         public function __construct(){
             $this->isFileExists = self::IsFileExists();
+            
+            if($this->isFileExists){
+                self::FileUpload();
+            } else{
+                self::FileCreation();
+            }            
         }
         
         //Проверка существования XML файла
