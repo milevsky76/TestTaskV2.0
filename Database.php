@@ -26,6 +26,13 @@
             
             $this->dom->save($this->fileName);
         }
+        
+        //Загрузка XML файла
+        private function FileUpload(){
+            $this->dom = new domDocument("1.0", "utf-8"); // Создаём XML-документ версии 1.0 с кодировкой utf-8
+            
+            $this->dom->load($this->fileName); // Загружаем XML-документ из файла в объект DOM
+        }
     }
 
 ?>
