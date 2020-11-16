@@ -1,0 +1,14 @@
+#401 Авторизация не выполнена
+ErrorDocument 401 /views/error.php
+
+#403 Access is denied
+ErrorDocument 403 /views/error.php
+
+#404 Page not found
+ErrorDocument 404 /views/error.php
+
+#500 Внутренняя ошибка сервера
+ErrorDocument 500 /views/error.php
+
+#Запрет вывода списка файлов
+Options All -Indexes

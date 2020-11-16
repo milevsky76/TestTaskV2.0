@@ -1,0 +1,13 @@
+#401 јвторизаци€ не выполнена
+ErrorDocument 401 /error.php
+
+#403 Access is denied
+ErrorDocument 403 /error.php
+
+#404 Page not found
+ErrorDocument 404 /error.php
+
+#500 ¬нутренн€€ ошибка сервера
+ErrorDocument 500 /error.php
+
+deny from all
